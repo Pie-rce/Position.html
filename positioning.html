@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Positioning Activity</title>
+    <link rel="stylesheet" type="text/css" href="positionstyles.css" />
+    <style>
+      .content1 {
+        display: grid;
+        grid-template-rows: 100px 1fr 1fr 100px;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        height: 100%;
+      }
+
+      .red1 {
+        background-color: red;
+        grid-column: span 2;
+        height: 100px;
+      }
+
+      .green1 {
+        background-color: green;
+        height: 100px;
+      }
+
+      .yellow1 {
+        background-color: yellow;
+        height: 100px;
+      }
+
+      .blue1 {
+        background-color: blue;
+        grid-column: span 2;
+        height: 100px;
+      }
+      .content1 div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="activity">
+      <h2>WDD 130 positioning exercises</h2>
+      <p>For each activity match make the boxes match the image by modifying the stylesheet.</p>
+    </div>
+    <div class="activity">
+      <h2>Activity 1</h2>
+      <div class="content1">
+        <div class="red1">Red</div>
+        <div class="green1">Green</div>
+        <div class="green1">Green</div>
+        <div class="yellow1">Yellow</div>
+        <div class="yellow1">Yellow</div>
+        <div class="blue1">Blue</div>
+      </div>
+    </div>
+  </body>
+</html>
